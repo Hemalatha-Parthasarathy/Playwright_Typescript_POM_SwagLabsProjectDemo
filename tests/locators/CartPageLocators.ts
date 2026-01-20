@@ -1,0 +1,15 @@
+export const CartPageLocators = {
+  btn_continueShop: "#continue-shopping",
+  btn_checkout: "#checkout",
+  lst_cartItem: ".cart_item",
+  name_cartProduct: ".inventory_item_name",
+  desc_cartProduct:".inventory_item_desc",
+  price_cartProducct: ".inventory_item_price",
+  quantity_cartProduct: ".cart_quantity",
+  lbl_cartQuantity: ".cart_quantity_label",
+  lbl_cartDescription: ".cart_desc_label",
+  header_cartPage: ".title",
+  icon_cart: ".shopping_cart_link",
+  count_cartItem: ".shopping_cart_badge",
+  lst_cartItemRemoveBtn: ".btn.btn_secondary.btn_small.cart_button",
+};

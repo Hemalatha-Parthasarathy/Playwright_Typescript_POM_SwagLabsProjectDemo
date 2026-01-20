@@ -1,0 +1,19 @@
+{
+  "name": "playwrightts_pom_bdd_demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "testspecificfile": "npx playwright test tests/TestCases/ProductPage.spec.ts --project chromium --headed",
+    "testcartfile": "npx playwright test tests/TestCases/CartPage.spec.ts --project chromium --headed"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.57.0",
+    "@types/node": "^25.0.8"
+  }
+}
