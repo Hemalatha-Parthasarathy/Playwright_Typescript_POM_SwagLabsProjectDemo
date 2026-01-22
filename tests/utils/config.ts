@@ -1,4 +1,15 @@
-export const BASEURL = 'https://www.saucedemo.com/';
+//export const BASEURL = 'https://www.saucedemo.com/';
+
+const ENV_URL ={
+qa: 'https://www.saucedemo.com/' ,
+dev:'https://www.saucedemo.com/',
+stage:'https://www.saucedemo.com/',
+prod:'https://www.saucedemo.com/'
+} 
+
+const ENV = process.env.ENV || "prod"
+export const BASEURL = (ENV_URL as any)[ENV];
+
 export const VALID_USER = 'standard_user';
 export const INVALID_USER = 'standard_user_invalid';
 export const PASSWORD = 'secret_sauce';
