@@ -92,7 +92,7 @@ test.describe("Product Page functionality", () => {
     expect(updatedCartCount).toBeNull();
   });
 
-  test.only("Add all products to the cart and verify cart count", async ({
+  test("Add all products to the cart and verify cart count", async ({
     page}) => {
     await productsPage.addAllProductsToCart();
     console.log("All products added to the cart");

@@ -51,7 +51,7 @@ test.describe("Cart Page Test Suite", () => {
     expect(cartProdDetails).toEqual(prodDetails);
   });
 
-  test.only("Validate All Product in the Cart Page", async ({ page }) => {
+  test("Validate All Product in the Cart Page", async ({ page }) => {
       const prodDetails = await productsPage.getAllProductDetails();
     await productsPage.addAllProductsToCart();
     console.log("All products added to the cart");
